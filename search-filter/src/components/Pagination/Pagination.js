@@ -3,6 +3,8 @@ import './Pagination.css';
 
 function Pagination({items, RenderComponent, setPage, pageLimit, itemsLimit}) {
   const [pages] = useState(Math.round(items.length / itemsLimit));
+  // а зачем useState, если ты никогда не меняешь pages?
+  // Записывай просто в переменную
   const [currentPage, setCurrentPage] = useState(1);
 
   function goToNextPage() {
@@ -14,6 +16,8 @@ function Pagination({items, RenderComponent, setPage, pageLimit, itemsLimit}) {
     setCurrentPage((currentPage) => currentPage - 1);
     setPage(currentPage);
   }
+  // next и previous почти одинаковы,
+  // думаю можно одну общую сделать чтоб переиспользовать логику
 
   function changePage(event) {
     const pageNumber = Number(event.target.textContent);

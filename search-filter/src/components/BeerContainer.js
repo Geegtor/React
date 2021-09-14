@@ -35,9 +35,10 @@ function BeerContainer() {
         );
     console.log('DATA CALCULATED = ', items,
         `${APIURL}beers?beer_name=${q}&page=${page}&per_page=${perPage}`);
+    // не забывай чистить логи перед комитом
   }, [page, perPage, q]);
 
- /*  const debounceFunction = (func, delay) => {
+  /*  const debounceFunction = (func, delay) => {
     let timer;
     return function() {
       const self = this;
