@@ -2,6 +2,8 @@ import React from 'react';
 import './BeerCard.css';
 
 function BeerCard(props) {
+  // думаю было бы лучше деструктуризировать props и item,
+  // меньше бы пришлось писать ниже
   return (
     <div id={props.item.id} className='card'>
       <div className='img-part'>
@@ -13,8 +15,10 @@ function BeerCard(props) {
           <ul>
             <li>Alcohol by Volume: {props.item.abv}%</li>
             <li>Attenuation: {props.item.attenuation_level}</li>
-            <li>Boil value: {props.item.boil_volume.value}
-              {props.item.boil_volume.unit}</li>
+            <li>
+              Boil value: {props.item.boil_volume.value}
+              {props.item.boil_volume.unit}
+            </li>
             <li>Brewers tips: {props.item.brewers_tips}</li>
             <li>Description: {props.item.description}</li>
           </ul>
