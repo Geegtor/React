@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+select {
+  cursor: pointer;
+  user-select: none;
+}

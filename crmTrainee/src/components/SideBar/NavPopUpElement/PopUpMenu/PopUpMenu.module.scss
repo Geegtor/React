@@ -1,0 +1,46 @@
+@import "../../../../Styles/variables.scss";
+
+.menu_items {
+  position: absolute;
+  background: $white;
+  left: 46px;
+  bottom: 35px;
+  flex-direction: column;
+  box-shadow: $pop-up-boxshadow;
+  display: flex;
+  min-width: 188px;
+  min-height: 260px;
+  font-family: $profile-font;
+  z-index: 1;
+  .menu_item {
+    font-size: 16px;
+    background: $white;
+    border: none;
+    box-sizing: border-box;
+    display: flex;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: $text-color;
+    cursor: pointer;
+    &:hover {
+      background: $hover-menu-items;
+    }
+  }
+  .exit_menu_item {
+    margin: 25px 0 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 12px;
+      height: 1px;
+      width: 164px;
+      background: $border-color;
+    }
+  }
+}
+
+.menu_items_full {
+  left: 190px;
+}

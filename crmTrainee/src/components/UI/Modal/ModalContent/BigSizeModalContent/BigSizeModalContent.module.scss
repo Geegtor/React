@@ -1,0 +1,19 @@
+@import '../../../../../Styles/variables.scss';
+
+.text_container {
+  padding: 20px;
+
+  .text_message {
+    margin: 0;
+    font-family: $font-family;
+  }
+}
+
+.control_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hidden_input {
+    display: none;
+  }
+}

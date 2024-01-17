@@ -1,0 +1,29 @@
+@import "../../../../../Styles/variables.scss";
+
+.text {
+  font-size: 20px;
+  color: $text-color;
+  font-family: $profile-font;
+  margin: 20px;
+}
+
+.button_container {
+  display: flex;
+  width: 100%;
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .button_no {
+    &:hover {
+      background: $hover-background-color;
+    }
+  }
+  .button_yes {
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

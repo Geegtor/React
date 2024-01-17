@@ -1,0 +1,67 @@
+@import '/src/Styles/common/formsStyle.scss';
+@import "../../../Styles/variables.scss";
+
+.form_container {
+  min-height: 300px;
+  .form_table {
+    .form_row {
+      .form_field {
+        &.non_editable_phone_field {
+          padding-left: -35px;
+        }
+        &.editable_phone_field {
+          padding-left: 55px;
+        }
+      }
+    }
+    .errorMsg {
+      height: 10px;
+      font-size: 10px;
+      margin-left: 177px;
+      color: $error-message-color;
+      user-select: none;
+    }
+  }
+}
+.reactDatepickerWrapper {
+  @include fieldFrame;
+  & :global .react-datepicker__input-container {
+    @include reset;
+    &::after {
+      content: url("../../../assets/img/svg/ProfileIcons/calendar.svg");
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    height: 100%;
+    input {
+      @include reset;
+      @include scale;
+      min-width: 225px;
+      max-width: 100%;
+      font-size: 16px;
+      &:focus {
+        outline-width: 0;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown_flags {
+  display: none;
+
+  .show_dropdown_flags {
+    display: block;
+  }
+}
+
+.react-tel-input {
+  box-sizing: 'content-box';
+}
+.form_phone_field {
+  box-sizing: 'content-box';
+}

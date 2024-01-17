@@ -1,0 +1,39 @@
+@mixin scale {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+@mixin fieldShape {
+  min-height: 35px;
+  padding-left: 10px;
+  padding-right: 16px;
+
+  font-size: 14px;
+
+  background-color: $white;
+  border: 1px solid $border-field;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+}
+
+@mixin fieldFrame {
+    width: 100%;
+    min-width: 240px;
+    max-width: 350px;
+
+    @include fieldShape;
+}
+
+@mixin fieldTextArea {
+  width: 100%;
+  height: 80px;
+  resize: none;
+
+  @include fieldShape;
+}

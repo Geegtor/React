@@ -1,0 +1,126 @@
+@import '../../Styles/variables.scss';
+
+.body {
+  width: 100%;
+  min-height: 937px;
+  background-image: url('../../assets/img/LoginPage/background.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: $white;
+}
+
+
+.crm_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 66px;
+}
+
+.login_form_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 62px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    min-width: 472px;
+    min-height: 400px;
+    background-color: $white;
+    box-shadow: 0px 0px 50px $box-shadow-color;
+    border-radius: 8px;
+
+    .form_header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-family;
+      font-size: 28px;
+      margin-top: 48px;
+    }
+
+    .form_table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .email_container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+
+    .password_container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      color: $label-color;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .field_container {
+      display: flex;
+      min-width: 312px;
+    }
+
+    .field {
+      min-width: 262px;
+      min-height: 40px;
+      border: 1px solid $field-border-color;
+      border-radius: 4px;
+      padding-left: 8px;
+      padding-right: 40px;
+      margin-top: 4px;
+      color: $text-color;
+      font-family: $font-family;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+
+    }
+
+    .field:focus {
+      outline: none;
+    }
+
+    input::placeholder {
+      color: $field-border-color;
+    }
+    
+    .error_message {
+      min-height: 16px;
+      color: $error-message-color;
+      margin-top: 4px;
+      margin-bottom: 0px;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .hide_button {
+      max-width: 24px;
+      max-height: 24px;
+      margin-left: -40px;
+      margin-top: 13px;
+      outline: none;
+      border: 0;
+      background: $white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
