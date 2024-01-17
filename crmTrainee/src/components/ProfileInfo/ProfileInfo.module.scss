@@ -1,0 +1,59 @@
+@import '/src/Styles/variables.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 40px 10px 40px 10px;
+
+  .photo_container {
+    position: relative;
+    min-width: 120px;
+    min-height: 120px;
+  }
+
+  .photo {
+    border-radius: 50%;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .text_container {
+    margin-left: 36px;
+    color: $text-color;
+    font-family: $profile-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .wrapper_button {
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    max-width: 24px;
+    max-height: 24px;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0px 0px 6px $button-box-shadow-color;
+
+    &:hover {
+      cursor: pointer;
+      path {
+        fill: $button-path-fill-hover;
+      }
+    }
+  }
+
+  .menu_container {
+    position: absolute;
+    top: 34px;
+    left: 95px;
+  }
+
+  .hidden_input {
+    display: none;
+  }
+}

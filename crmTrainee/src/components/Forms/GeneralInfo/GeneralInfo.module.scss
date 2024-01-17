@@ -1,0 +1,38 @@
+@import "/src/Styles/common/formsStyle.scss";
+@import "../../../Styles/variables.scss";
+
+.form_container {
+  min-height: 500px;
+}
+
+.form_table {
+  min-height: 400px;
+  .errorMsg {
+    height: 10px;
+    font-size: 10px;
+    margin-left: 177px;
+    color: $error-message-color;
+    user-select: none;
+  }
+
+  .reactDatepickerWrapper {
+    @include fieldFrame;
+    & :global .react-datepicker__input-container {
+      @include reset;
+      &::after {
+        content: url("../../../assets/img/svg/ProfileIcons/calendar.svg");
+      }
+      input {
+        @include reset;
+        @include scale;
+        min-width: 225px;
+        max-width: 315px;
+        font-size: 16px;
+
+        &:focus {
+          outline-width: 0;
+        }
+      }
+    }
+  }
+}

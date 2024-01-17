@@ -1,0 +1,51 @@
+.info_field_container {
+  margin-bottom: 40px;
+}
+
+.info_field {
+  display: flex;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.list_item {
+  color: #888c91;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.field_icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav_field {
+  margin-bottom: 32px;
+  vertical-align: middle;
+  align-items: center;
+  border-bottom: 1px solid rgba(136, 141, 146, .2);
+}
+
+.nav_field_item {
+  display: inline-block;
+  font-size: 14px;
+  padding-bottom: 17px;
+  color:#888D92;
+
+  &:nth-child(1) {
+    margin-right: 16px;
+  }
+
+  &_active {
+    color: #000000;
+    border-bottom: 3px solid #FEDA00;
+  }
+}

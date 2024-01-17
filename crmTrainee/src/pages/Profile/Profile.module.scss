@@ -1,0 +1,59 @@
+@import "../../Styles/variables.scss";
+
+.page_container {
+  width: 100%;
+  min-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 20px;
+  font-family: $profile-font;
+  background-color: $body-color;
+
+  .page_header{
+    padding: 20px;
+    max-height: 40px;
+
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid $border-color;
+
+    h2 {
+      margin: 0;
+      font-family: $profile-font;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  .page_forms {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: 0px 0px 6px rgba(5, 31, 43, 0.1);
+
+    .forms_container {
+      padding-top: 15px;
+      min-height: 485px;
+      display: flex;
+      flex-direction: row;
+      .forms_column {
+        flex: 1;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+    }
+
+    .page_photo {
+      width: 100%;
+      min-height: 100px;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+

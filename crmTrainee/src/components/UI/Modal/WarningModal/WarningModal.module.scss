@@ -1,0 +1,32 @@
+@import "../../../../Styles/variables.scss";
+
+.modal_background {
+  width: 100vw;
+  height: 100vh;
+  background: $modal-background-color;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal_container {
+    position: relative;
+    box-sizing: border-box;
+    background: $white;
+    border-radius: 8px;
+    text-align: center;
+    .modal_cancel_button {
+      cursor: pointer;
+      position: absolute;
+      right: 30px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .exit_modal_container {
+    min-width: 424px;
+    min-height: 208px;
+    padding: 24px 14px 24px;
+  }
+}

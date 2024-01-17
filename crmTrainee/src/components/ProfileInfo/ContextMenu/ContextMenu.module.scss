@@ -1,0 +1,31 @@
+@import '/src/Styles/variables.scss';
+
+.menu_container {
+  display: flex;
+  min-width: 180px;
+  flex-direction: column;
+  background: $white;
+  box-shadow: 0px 5px 15px rgba(5, 31, 43, 0.17);
+  border-radius: 4px;
+
+  .menu_field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $white;
+    border: 0;
+    padding: 11px 16px;
+    font-family: $profile-font;
+    font-weight: 400;
+    font-size: 14px;
+
+    &:hover {
+      cursor: pointer;
+      background: $menu-field-background-hover;
+    }
+  }
+
+  .file_input {
+    display: none;
+  }
+}

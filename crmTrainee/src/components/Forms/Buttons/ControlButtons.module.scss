@@ -1,0 +1,15 @@
+  .controls_buttons {
+  justify-content: flex-end;
+  flex-direction: row;
+  min-width: 375px;
+  min-height: 35px;
+  margin-top: 10px;
+  padding-right: 16px;
+
+  .button_wrapper {
+    margin-left: 16px;
+  }
+  .distance_between_buttons {
+    margin-right: 16px;
+  }
+}
