@@ -1,0 +1,30 @@
+.img-part {
+  width: 20%;
+  height: 45vh;
+
+  float: left;
+  vertical-align: middle;
+}
+
+.text-part {
+  width: 70%;
+  min-height: 9vh;
+  float: left;
+  font-size: calc(5px + 1vmin);
+}
+
+.card {
+  background-color: grey;
+  display: inline-block;
+
+  width: 75vw;
+
+  margin: 1vh 1vw;
+  padding: 2% 2%;
+
+  border: 1px solid white;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
