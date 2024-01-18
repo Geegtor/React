@@ -1,8 +1,9 @@
-#Training React project
+# Training React project
 
 node version required: 16.13.0
 
-to start local project locally
+to start local project
+
 npm run start
 
 SPA with following sections:
