@@ -1,0 +1,12 @@
+ 
+li{  
+
+    display: inline;
+    border: 1px black solid;
+
+    margin: 15px;
+    padding: 5px 15px;
+    
+    box-shadow: 1px 1px #888888;
+    cursor: pointer;
+}
